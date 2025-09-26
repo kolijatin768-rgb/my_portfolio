@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jatin Kr. Koli - Web Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: url('https://images.unsplash.com/photo-1549880338-65ddcdfd017b?q=80&w=2070&auto=format&fit=crop') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            scroll-behavior: smooth;
+        }
+        /* Semi-transparent overlay */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: -1;
+        }
+        /* Custom styles for smooth scrolling and section padding */
+        section {
+            padding-top: 100px;
+            padding-bottom: 100px;
+            min-height: 80vh;
+        }
+        .nav-link {
+            transition: color 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #d1d5db; /* gray-300 */
+        }
+        .card {
+             background-color: rgba(255, 255, 255, 0.1);
+             border-radius: 0.75rem;
+             padding: 1.5rem;
+             backdrop-filter: blur(10px);
+             border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        /* Custom styles for form inputs */
+        .form-input {
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid #6b7280; /* gray-500 */
+            color: white;
+            width: 100%;
+            padding: 0.5rem 0;
+        }
+        .form-input:focus {
+            outline: none;
+            border-bottom-color: #d1d5db; /* gray-300 */
+        }
+        .form-textarea {
+             background-color: transparent;
+             border: 1px solid #6b7280; /* gray-500 */
+             color: white;
+             width: 100%;
+             padding: 0.5rem;
+             border-radius: 0.375rem; /* rounded-md */
+        }
+        .form-textarea:focus {
+            outline: none;
+            border-color: #d1d5db; /* gray-300 */
+        }
+    </style>
+</head>
+<body class="bg-black text-white">
+
+    <!-- Header & Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-10 bg-black bg-opacity-50 backdrop-blur-md">
+        <nav class="container mx-auto px-6 py-4">
+            <ul class="flex justify-center space-x-4 md:space-x-8">
+                <li><a href="#home" class="nav-link text-sm md:text-base">Home</a></li>
+                <li><a href="#education" class="nav-link text-sm md:text-base">Education & Qualification</a></li>
+                <li><a href="#skills" class="nav-link text-sm md:text-base">Skills & Experiences</a></li>
+                <li><a href="#certifications" class="nav-link text-sm md:text-base">Certifications</a></li>
+                <li><a href="#contact" class="nav-link text-sm md:text-base">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-6">
+
+        <!-- Home Section -->
+        <section id="home" class="flex flex-col items-center justify-center text-center min-h-screen pt-20">
+            <h1 class="text-5xl md:text-7xl font-bold">Jatin Kr. Koli</h1>
+            <p class="mt-4 text-xl md:text-2xl">- Web Developer -</p>
+            <p class="mt-8 max-w-3xl text-gray-300">
+                Detail-oriented, analytical, and self-driven programmer with extensive experience building user-facing applications. Efficient and knowledgeable coder with skills in HTML, CSS, JavaScript and React programming languages. Coordinated and collaborative team player with attention to detail, graphic design skills, and ability to contribute to code base improvement initiatives and UI/UX improvement projects.
+            </p>
+        </section>
+
+        <!-- Education & Qualification Section -->
+        <section id="education" class="text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-12">Education & Qualification</h2>
+            <div class="grid md:grid-cols-3 gap-12 text-left">
+                <div class="md:col-span-1">
+                     <p class="text-lg font-semibold">Creation Computer Center</p>
+                     <p class="text-gray-400">Wazirabad, Gurugram (HR)</p>
+                     <p class="text-gray-400">- Basic to Advanced Excel</p>
+                </div>
+                 <div class="md:col-span-1">
+                     <p class="text-lg font-semibold">IBM SkillBuild</p>
+                     <p class="text-gray-400">- Generative AI Foundation Course</p>
+                </div>
+                <div class="md:col-span-1">
+                     <p class="text-lg font-semibold">FreeCodeCamp</p>
+                     <p class="text-gray-400">- Responsive Web Designing Course</p>
+                </div>
+            </div>
+
+            <h3 class="text-3xl md:text-4xl font-bold mt-20 mb-12">Currently Pursuing</h3>
+            <div class="grid md:grid-cols-2 gap-12 text-left max-w-4xl mx-auto">
+                 <div>
+                    <p class="text-lg font-semibold">Manipal University Jaipur</p>
+                    <p class="text-gray-400">Rajasthan (IN)</p>
+                    <p class="text-gray-400">- BCA (Bachelor's in Computer application)</p>
+                    <p class="text-gray-400">SGPA: 7.41</p>
+                 </div>
+                 <div>
+                    <p class="text-lg font-semibold">FreeCodeCamp</p>
+                    <p class="text-gray-400">- Full-Stack Web Development</p>
+                 </div>
+            </div>
+        </section>
+
+        <!-- Skills & Experiences Section -->
+        <section id="skills" class="text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-12">Skills & Experiences</h2>
+            <div class="grid md:grid-cols-2 gap-12 text-left max-w-4xl mx-auto">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6">Skills</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-300">
+                        <li>Responsive Web Designer</li>
+                        <li>Front-end Development</li>
+                        <li>Generative AI</li>
+                        <li>Advanced Excel</li>
+                        <li>Communication</li>
+                        <li>Problem Solving</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6">Experiences</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-300">
+                       <li class="mb-4">
+                           <strong>June 2018 - December 2018</strong><br>
+                           Trainer - Creation Computer Center
+                       </li>
+                       <li class="mb-4">
+                           <strong>January 2019 - June 2019</strong><br>
+                           Salesperson - Sara Mart
+                       </li>
+                       <li>
+                           <strong>August 2024 - Current 2025</strong><br>
+                           On-Demand Picker - Blinkit
+                       </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-12">Certifications</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="card">
+                    <img src="Certificates/Introduction to HTML.png" alt="Certificate Placeholder" class="rounded-lg mb-4">
+                    <h4 class="font-semibold">Introduction to HTML Certification</h4>
+                </div>
+                <div class="card">
+                    <img src="Certificates/Artificial Intelligence Fundamentals.png" alt="Certificate Placeholder" class="rounded-lg mb-4">
+                    <h4 class="font-semibold">Artificial Intelligence Fundamental Certification</h4>
+                </div>
+                <div class="card">
+                    <img src="Certificates/Project Management Fundamentals.png" alt="Certificate Placeholder" class="rounded-lg mb-4">
+                    <h4 class="font-semibold">Project Management Fundamental Certification</h4>
+                </div>
+                 <div class="card">
+                    <img src="Certificates/Responsive Web Design.png" alt="Certificate Placeholder" class="rounded-lg mb-4">
+                    <h4 class="font-semibold">Responsive Web Design Certification</h4>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Me Section -->
+        <section id="contact" class="text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-12">Contact Me</h2>
+            <div class="max-w-xl mx-auto p-8 text-left mb-8 card">
+                <form action="#" method="POST">
+                    <div class="flex items-center mb-6">
+                        <label for="name" class="w-1/4 text-gray-300">Name:</label>
+                        <input type="text" id="name" name="name" class="form-input w-3/4">
+                    </div>
+                    <div class="flex items-center mb-6">
+                        <label for="mobile" class="w-1/4 text-gray-300">Mobile Number:</label>
+                        <input type="tel" id="mobile" name="mobile" class="form-input w-3/4">
+                    </div>
+                    <div class="flex items-center mb-6">
+                        <label for="email" class="w-1/4 text-gray-300">Email:</label>
+                        <input type="email" id="email" name="email" class="form-input w-3/4">
+                    </div>
+                    <div class="mb-6">
+                        <label for="comment" class="block mb-2 text-gray-300">Comment:</label>
+                        <textarea id="comment" name="comment" rows="4" class="form-textarea"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-white bg-opacity-25 text-white font-bold py-3 px-4 rounded-md hover:bg-opacity-30 transition-colors">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+
+            <div class="max-w-xl mx-auto p-8 card mt-8">
+                <h3 class="text-3xl md:text-4xl font-bold mb-8">Social Media Platforms</h3>
+                <div class="flex justify-center space-x-8">
+                    <a href="https://www.instagram.com/call_me_jk_dark" target="_blank" class="transform hover:scale-110 transition-transform">
+                        <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M12 2c-2.717 0-3.056.01-4.122.06-1.065.05-1.79.217-2.428.465a4.898 4.898 0 00-1.772 1.153 4.898 4.898 0 00-1.153 1.772c-.248.638-.415 1.363-.465 2.428C2.01 8.944 2 9.283 2 12s.01 3.056.06 4.122c.05 1.065.217 1.79.465 2.428a4.898 4.898 0 001.153 1.772 4.898 4.898 0 001.772 1.153c.638.248 1.363.415 2.428.465C8.944 21.99 9.283 22 12 22s3.056-.01 4.122-.06c1.065-.05 1.79-.217 2.428-.465a4.898 4.898 0 001.772-1.153 4.898 4.898 0 001.153-1.772c.248-.638.415-1.363.465-2.428C21.99 15.056 22 14.717 22 12s-.01-3.056-.06-4.122c-.05-1.065-.217-1.79-.465-2.428a4.898 4.898 0 00-1.153-1.772 4.898 4.898 0 00-1.772-1.153c-.638-.248-1.363-.415-2.428-.465C15.056 2.01 14.717 2 12 2zm0 1.44c2.67 0 2.987.01 4.042.058.975.045 1.505.207 1.858.344.45.18.72.393 1.015.688.295.295.508.565.688 1.015.137.353.3.883.344 1.858.048 1.055.058 1.372.058 4.042s-.01 2.987-.058 4.042c-.045.975-.207 1.505-.344 1.858a3.44 3.44 0 01-.688 1.015 3.44 3.44 0 01-1.015.688c-.353.137-.883.3-1.858.344-1.055.048-1.372.058-4.042.058s-2.987-.01-4.042-.058c-.975-.045-1.505-.207-1.858-.344a3.44 3.44 0 01-1.015-.688 3.44 3.44 0 01-.688-1.015c-.137-.353-.3-.883-.344-1.858-.048-1.055-.058-1.372-.058-4.042s.01-2.987.058-4.042c.045-.975.207-1.505.344-1.858.18-.45.393-.72.688-1.015.295-.295.565-.508 1.015-.688.353-.137.883-.3 1.858-.344C9.013 3.45 9.33 3.44 12 3.44zm0 3.12a5.44 5.44 0 100 10.88 5.44 5.44 0 000-10.88zm0 1.44a4 4 0 110 8 4 4 0 010-8zm6.406-4.56a1.44 1.44 0 100 2.88 1.44 1.44 0 000-2.88z" clip-rule="evenodd"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/jatin-kr-koli" target="_blank" class="transform hover:scale-110 transition-transform">
+                         <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                     <a href="https://x.com/jk_dark_gaming" target="_blank" class="transform hover:scale-110 transition-transform">
+                        <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-8 bg-black bg-opacity-70">
+        <p class="text-gray-400">&copy; 2025 | All Rights Reserved By Jatin Kr. Koli</p>
+    </footer>
+
+</body>
+</html>
+
